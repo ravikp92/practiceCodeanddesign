@@ -83,7 +83,61 @@ public class CollectionJava {
 		Collections.sort(cats,comp);
 		System.out.println(cats);
 		
+		System.out.println("Trixy at index"+Collections.binarySearch(cats, new Cat("Trixy",5),comp));
+		
+		
+		//Generics
+		
+		List<?> wildcard=new ArrayList<Integer>();
+//		wildcard.add(new Integer(1));// readonly
+		List<? extends Number> wildcardupperbound=new ArrayList<Integer>();
+//		wildcardupperbound.add(1); // readyonly
+		List<? super Integer> wildlowerbound=new ArrayList<Number>();
+		System.out.println(wildlowerbound.add(1)); 
+		
+		
+		MyGeneric<String> str=new MyGeneric("RK");
+		System.out.println(str.getT());
+		MyGeneric<Integer> intsa=new MyGeneric(1);
+		System.out.println(intsa.getT());
+		
+		
+		//generic interface
+		new Numbers().move(new Integer(1));
+		
+		MyGeneric<String> getstre=createGeneric("generic");
+		System.out.println(getstre.getT());
+		
+	}
+	//generic method
+	public static <T> MyGeneric<T> createGeneric(T t){
+		return new MyGeneric(t);
 	}
 
+}
 
+
+interface Moveable<T>{
+	void move(T t);
+}
+
+class Numbers implements Moveable<Integer>{
+
+	@Override
+	public void move(Integer t) {
+			System.out.println("hi");
+	}
+	
+}
+
+class MyGeneric<T>{
+	T instance;
+	public MyGeneric(T t) {
+		// TODO Auto-generated constructor stub
+		instance=t;
+	}
+	
+	public T getT() {
+		return instance;
+	}
 }
