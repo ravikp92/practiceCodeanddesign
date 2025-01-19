@@ -1,6 +1,6 @@
-package com.example.demo.behaviorialdp.observerdp.observable;
+package src.main.java.com.example.demo.behaviorialdp.observerdp.observable;
 
-import com.example.demo.behaviorialdp.observerdp.observer.NotifyMeObserver;
+import src.main.java.com.example.demo.behaviorialdp.observerdp.observer.NotifyMeObserver;
 
 public interface StockObservable {
 

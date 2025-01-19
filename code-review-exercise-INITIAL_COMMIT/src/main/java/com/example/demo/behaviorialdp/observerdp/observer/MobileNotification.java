@@ -1,6 +1,6 @@
-package com.example.demo.behaviorialdp.observerdp.observer;
+package src.main.java.com.example.demo.behaviorialdp.observerdp.observer;
 
-import com.example.demo.behaviorialdp.observerdp.observable.StockObservable;
+import src.main.java.com.example.demo.behaviorialdp.observerdp.observable.StockObservable;
 
 public class MobileNotification implements NotifyMeObserver {
 

@@ -1,10 +1,10 @@
-package com.example.demo.behaviorialdp.observerdp;
+package src.main.java.com.example.demo.behaviorialdp.observerdp;
 
-import com.example.demo.behaviorialdp.observerdp.observable.IphoneObservable;
-import com.example.demo.behaviorialdp.observerdp.observable.StockObservable;
-import com.example.demo.behaviorialdp.observerdp.observer.EmailNotification;
-import com.example.demo.behaviorialdp.observerdp.observer.MobileNotification;
-import com.example.demo.behaviorialdp.observerdp.observer.NotifyMeObserver;
+import src.main.java.com.example.demo.behaviorialdp.observerdp.observable.IphoneObservable;
+import src.main.java.com.example.demo.behaviorialdp.observerdp.observable.StockObservable;
+import src.main.java.com.example.demo.behaviorialdp.observerdp.observer.EmailNotification;
+import src.main.java.com.example.demo.behaviorialdp.observerdp.observer.MobileNotification;
+import src.main.java.com.example.demo.behaviorialdp.observerdp.observer.NotifyMeObserver;
 
 public class StoreMain {
 
