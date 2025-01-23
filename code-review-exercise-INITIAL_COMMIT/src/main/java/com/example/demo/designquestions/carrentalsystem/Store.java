@@ -1,4 +1,4 @@
-package com.example.demo.designquestions.carrentalsystem;
+package src.main.java.com.example.demo.designquestions.carrentalsystem;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.example.demo.designquestions.carrentalsystem;
+package src.main.java.com.example.demo.designquestions.carrentalsystem;
 
 public class Payment {
     public void payBill(Bill bill) {
